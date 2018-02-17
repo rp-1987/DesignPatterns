@@ -10,6 +10,24 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
+
+            Parallel.Invoke(() => CreateStudent(), () => CreateEmployee());                        
+            Console.ReadLine();
         }
+
+        private static void CreateEmployee()
+        {           
+            Singleton fromEmployee = Singleton.GetInstance;
+            fromEmployee.PrintDetails("From Employee");
+        }
+
+        private static void CreateStudent()
+        {
+            System.Threading.Thread.Sleep(2000);
+            Singleton fromStudent = Singleton.GetInstance;
+            fromStudent.PrintDetails("From Student");
+        }
+
+
     }
 }
