@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factory\ContractEmployeeType.cs" />
+    <Compile Include="Factory\Employee.cs" />
+    <Compile Include="Factory\EmployeeFactory.cs" />
+    <Compile Include="Factory\IEmployeeType.cs" />
+    <Compile Include="Factory\PermanentEmployeeType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Singleton.cs" />
