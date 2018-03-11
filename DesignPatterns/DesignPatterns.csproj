@@ -43,10 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Creational\Builder\IRobotBuilder.cs" />
+    <Compile Include="Creational\Builder\IRobotPlan.cs" />
+    <Compile Include="Creational\Builder\OldRobotBuilder.cs" />
+    <Compile Include="Creational\Builder\Robot.cs" />
+    <Compile Include="Creational\Builder\RobotEngineer.cs" />
+    <Compile Include="Factory\BaseEmployeeFactory.cs" />
+    <Compile Include="Factory\ContractEmployeeFactory.cs" />
     <Compile Include="Factory\ContractEmployeeType.cs" />
     <Compile Include="Factory\Employee.cs" />
     <Compile Include="Factory\EmployeeFactory.cs" />
     <Compile Include="Factory\IEmployeeType.cs" />
+    <Compile Include="Factory\PermanentEmployeeFactory.cs" />
     <Compile Include="Factory\PermanentEmployeeType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -55,6 +63,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

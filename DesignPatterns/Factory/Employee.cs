@@ -14,5 +14,7 @@ namespace DesignPatterns.Factory
         public string EmployeeType { get; set; }
         public decimal Salary { get; set; }
         public decimal Bonus { get; set; }
+        public decimal HRA { get; set; }
+        public decimal MedicalAllowance { get; set; }
     }
 }

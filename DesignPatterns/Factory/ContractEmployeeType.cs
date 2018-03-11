@@ -17,5 +17,10 @@ namespace DesignPatterns.Factory
         {
             return 8;
         }
+
+        public int GetMedicalAllowance()
+        {
+            return 5;
+        }
     }
 }

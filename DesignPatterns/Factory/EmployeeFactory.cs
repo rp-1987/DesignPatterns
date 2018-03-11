@@ -8,15 +8,15 @@ namespace DesignPatterns.Factory
 {
     public class EmployeeFactory
     {
-        public IEmployeeType GetEmployeeType(string employeeType)
+        public BaseEmployeeFactory CreateFactory(Employee emp)
         {
-            if(employeeType == "Permanent")
+            if(emp.EmployeeType == "Permanent")
             {
-                return new PermanentEmployeeType();
+                return new PermanentEmployeeFactory(emp);
             }
             else
             {
-                return new ContractEmployeeType();
+                return new ContractEmployeeFactory(emp);
             }
         }
     }

@@ -17,5 +17,10 @@ namespace DesignPatterns.Factory
         {
             return 10;
         }
+
+        public int GetHRA()
+        {
+            return 5;
+        }
     }
 }
